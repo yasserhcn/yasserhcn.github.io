@@ -1,0 +1,28 @@
+$main-color : #1b262c;
+$secondary : #0f4c75;
+$light-color : #3282b8;
+$text-color : #bbe1fa;
+
+body
+{
+	margin: 0;
+}
+
+header
+{
+    background-color: $main-color;
+    color: $text-color;
+    text-align: center;
+    vertical-align: center;
+    height: 50px;
+    width: 100%;
+
+}
+
+.body
+{
+	background-color: $main-color;
+	color: $text-color;
+	width: 100%;
+	height : 100%;
+}
