@@ -5,50 +5,96 @@ body {
 header {
   background-color: #1b262c;
   color: #bbe1fa;
-  height: 50px;
+  text-align: center;
+  height: 100px;
   width: 100%;
   overflow: visible;
+  /*.link-right
+  {
+  	a
+  	{
+  		text-decoration: none;
+  		color: $text-color;
+  		white-space: nowrap;
+  	}
+
+  	float: right;
+  	text-align: center;
+  	padding: 10px;
+  	margin: 15px;
+  	right: 5em;
+  	background-color: $secondary;
+  	border-radius: 5px;
+  	position: relative;
+  }*/
 }
 header ul {
   padding: 10px;
-  float: left;
-  margin: 0;
+  float: right;
+  margin: 20px, 10px;
   list-style: none;
-  left: 10px;
   list-style-type: none;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  line-height: 1.6;
 }
 header ul li {
-  padding: 10px;
+  top: 10px;
   margin: 20px;
-  background-color: #0f4c75;
-  border-radius: 5px;
   display: inline;
 }
 header ul li a {
+  cursor: context-menu;
   text-decoration: none;
   color: #bbe1fa;
   white-space: nowrap;
-}
-header .link-right {
-  float: right;
-  text-align: center;
-  padding: 5px;
-  margin: 10px;
-  background-color: #0f4c75;
+  padding: 10px;
+  background-color: #1b262c;
   border-radius: 5px;
-  position: relative;
 }
-header .link-right a {
-  text-decoration: none;
-  color: #bbe1fa;
-  white-space: nowrap;
+header ul li a #who-am-i {
+  padding: 20px;
+  position: absolute;
+  background-color: #0f4c75;
+  border-radius: 10px;
+  display: none;
+  right: 10px;
+}
+header ul li a #hobbies {
+  padding: 20px;
+  position: absolute;
+  background-color: #0f4c75;
+  border-radius: 10px;
+  display: none;
+  right: 10px;
+}
+header ul li a #languages {
+  padding: 20px;
+  position: absolute;
+  background-color: #0f4c75;
+  border-radius: 10px;
+  display: none;
+  right: 10px;
+}
+header ul li a:hover {
+  transition: 0.3s;
+  background-color: #0f4c75;
+}
+header ul li a:hover #who-am-i {
+  display: block;
+}
+header ul li a:hover #hobbies {
+  display: block;
+}
+header ul li a:hover #languages {
+  display: block;
 }
 
 .body {
+  padding: 50px;
   background-color: #1b262c;
   color: #bbe1fa;
-  width: 100%;
-  height: 100%;
 }
 .body h1 {
   margin: 0;
