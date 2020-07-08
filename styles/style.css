@@ -5,10 +5,42 @@ body {
 header {
   background-color: #1b262c;
   color: #bbe1fa;
-  text-align: center;
-  vertical-align: center;
+  overflow: hidden;
   height: 50px;
+  padding: 10px;
   width: 100%;
+}
+header ul {
+  padding: 10px;
+  float: left;
+  margin: 0;
+  list-style: none;
+  left: 10px;
+  list-style-type: none;
+}
+header ul li {
+  padding: 10px;
+  background-color: #0f4c75;
+  border-radius: 5px;
+  margin: 20px;
+  display: inline;
+}
+header ul li a {
+  text-decoration: none;
+  color: #bbe1fa;
+}
+header .link-right {
+  float: right;
+  text-align: center;
+  padding: 5px;
+  background-color: #0f4c75;
+  border-radius: 5px;
+  position: relative;
+  right: 20px;
+}
+header .link-right a {
+  text-decoration: none;
+  color: #bbe1fa;
 }
 
 .body {

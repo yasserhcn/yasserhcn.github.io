@@ -12,10 +12,51 @@ header
 {
     background-color: $main-color;
     color: $text-color;
-    text-align: center;
-    vertical-align: center;
+    overflow: hidden;
     height: 50px;
+    padding: 10px;
     width: 100%;
+
+    ul
+    {
+    	padding: 10px;
+    	float: left;
+    	margin: 0;
+    	list-style: none;
+    	left: 10px;
+    	list-style-type: none;
+
+    	li
+    	{
+    		a
+    		{
+    			text-decoration: none;
+    			color: $text-color;
+    		}
+    		padding: 10px;
+   			background-color: $secondary;
+   			border-radius: 5px;
+    		margin: 20px;
+    		display: inline;
+    	}
+    }
+
+    .link-right
+    {
+    	a
+    	{
+    		text-decoration: none;
+    		color: $text-color;
+    	}
+
+    	float: right;
+    	text-align: center;
+    	padding: 5px;
+   		background-color: $secondary;
+   		border-radius: 5px;
+    	position: relative;
+    	right:20px;
+    }
 
 }
 
