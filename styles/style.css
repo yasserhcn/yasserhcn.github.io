@@ -81,13 +81,35 @@ header ul li a:hover {
   background-color: #0f4c75;
 }
 header ul li a:hover #who-am-i {
+  transition: 0.5s;
   display: block;
 }
 header ul li a:hover #hobbies {
+  transition: 0.5s;
   display: block;
 }
 header ul li a:hover #languages {
+  transition: 0.5s;
   display: block;
+}
+
+.image-title {
+  transition: 0.3s;
+  color: white;
+  font-family: sans-serif;
+  background-color: rgba(1, 0, 66, 0.2);
+  border-radius: 5px;
+  padding: 1em;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 50%;
+  text-align: center;
+  vertical-align: center;
+}
+.image-title:hover {
+  transition: 0.3s;
+  background-color: #010042;
 }
 
 .body {

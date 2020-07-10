@@ -78,14 +78,17 @@ header
 
    					#who-am-i
    					{
+   						transition: 0.5s;
    						display: block;
    					}
    					#hobbies
    					{
+   						transition: 0.5s;
    						display: block;
    					}
    					#languages
    					{
+   						transition: 0.5s;
    						display: block;
    					}
     			}
@@ -96,26 +99,28 @@ header
     		display: inline;
     	}
     }
+}
 
-    /*.link-right
-    {
-    	a
-    	{
-    		text-decoration: none;
-    		color: $text-color;
-    		white-space: nowrap;
-    	}
 
-    	float: right;
-    	text-align: center;
-    	padding: 10px;
-    	margin: 15px;
-    	right: 5em;
-   		background-color: $secondary;
-   		border-radius: 5px;
-    	position: relative;
-    }*/
-
+.image-title
+{
+	&:hover
+	{
+		transition: 0.3s;
+		background-color: rgba(1,0,66,1);
+	}
+	transition: 0.3s;
+	color: white;
+	font-family: sans-serif;
+	background-color: rgba(1,0,66,0.2);
+	border-radius: 5px;
+	padding: 1em;
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	right: 50%;
+	text-align: center;
+	vertical-align: center;
 }
 
 .body
@@ -123,6 +128,7 @@ header
 	padding: 50px;
 	background-color: $main-color;
 	color: $text-color;
+
 	h1
 	{
 		margin: 0;
