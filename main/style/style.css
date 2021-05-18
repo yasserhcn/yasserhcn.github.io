@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 body {
-  background-color: #272727;
+  background-color: #191919;
   margin: 0;
   font-family: "Roboto", "sans-serif";
   color: #FFE5D4;
@@ -17,8 +17,8 @@ body .top ul {
   padding-left: 0;
 }
 body .top ul li {
-  background-color: #171A21;
-  background-color: linear-gradient(#171A21, #272727);
+  background-color: #212223;
+  background-color: linear-gradient(#212223, #191919);
   border-radius: 10px;
   margin-left: 0.5em;
   margin-right: 0.5em;
