@@ -5,6 +5,11 @@ body {
   font-family: "Roboto", "sans-serif";
   color: #FFE5D4;
 }
+body a {
+  color: #10FFCB;
+  text-decoration: none;
+  font-weight: bold;
+}
 body .top {
   margin-top: 1em;
 }
@@ -45,6 +50,34 @@ body .top ul li ul {
 body .top ul li ul li {
   text-align: left;
   padding: 0.5em;
+}
+body .projs {
+  text-align: center;
+}
+body .projs ul {
+  margin-top: 1em;
+  display: flex;
+  height: 25%;
+  vertical-align: middle;
+  margin: 0;
+  padding-left: 0;
+}
+body .projs ul li {
+  background-color: #212223;
+  background-color: linear-gradient(#212223, #191919);
+  border-radius: 10px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  height: 25%;
+  width: 45%;
+  padding: 0.5em;
+  list-style: none;
+  flex-grow: 1;
+  flex-basis: 0%;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
