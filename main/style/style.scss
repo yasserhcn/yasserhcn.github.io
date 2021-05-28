@@ -32,16 +32,19 @@ body{
                 border-radius: 10px;
                 margin-left: 0.5em;
                 margin-right: 0.5em;
-                padding-top: 2em;
-                padding-bottom: 2em;
                 height: 25%;
                 width: 45%;
                 padding: 0.5em;
+                padding-left: 2em;
                 list-style: none;
                 flex-grow: 1;
                 flex-basis: 0%;
                 flex-wrap: wrap;
-                text-align: center;
+                text-align: left;
+                
+                h1{
+                    text-align: center;
+                }
 
                 h2{
                     text-align: left;
