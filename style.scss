@@ -2,6 +2,7 @@ body
 {
     background-color: rgb(22, 22, 22);
     color: white;
+    margin-bottom: 0;
 
     #top-bar
     {
@@ -80,5 +81,27 @@ body
         text-align: center;
         font-size: larger;
         margin-top: 0;
+    }
+
+    #the-thing-for-button
+    {
+
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        #scroll-to-about
+        {
+            bottom: 0;
+            left: 50%;
+            background-color: rgb(30, 30, 30);
+            border-radius: 1em 1em 0 0;
+
+            #scroll-down-button
+            {
+                font-size: xx-large;
+                padding: 0.8em;
+            }
+        }
     }
 }
