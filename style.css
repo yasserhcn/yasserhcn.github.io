@@ -1,10 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: #161616;
+  background-color: rgb(22, 22, 22);
   color: white;
-  position: relative;
   margin-bottom: 0;
 }
-body #top-bar {
+body #landing-view {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+body #landing-view #top-bar {
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -12,14 +20,14 @@ body #top-bar {
   flex-direction: row;
   padding: 0;
   margin: 0.5em;
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
   border-radius: 3em;
 }
-body #top-bar #left-side {
+body #landing-view #top-bar #left-side {
   display: flex;
   margin-left: 3em;
 }
-body #top-bar #left-side a {
+body #landing-view #top-bar #left-side a {
   transition: 0.2s;
   margin: 1em;
   text-decoration: none;
@@ -27,11 +35,11 @@ body #top-bar #left-side a {
   position: relative;
   font-size: larger;
 }
-body #top-bar #left-side a:hover {
+body #landing-view #top-bar #left-side a:hover {
   transition: 0.2s;
   color: lightblue;
 }
-body #top-bar #left-side a:after {
+body #landing-view #top-bar #left-side a:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -43,41 +51,69 @@ body #top-bar #left-side a:after {
   transform-origin: bottom right;
   transition: transform 0.15s ease-out;
 }
-body #top-bar #left-side a:hover:after {
+body #landing-view #top-bar #left-side a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-body #top-bar #right-side {
+body #landing-view #top-bar #right-side {
   display: flex;
 }
-body #top-bar #right-side #icons {
+body #landing-view #top-bar #right-side #icons {
   font-size: 3em;
   margin: 0.5em;
 }
-body #big-hi-title {
+body #landing-view #big-hi-title {
   font-size: 8em;
   text-align: center;
   margin-bottom: 0;
 }
-body #small-text-under-big-hi {
+body #landing-view #small-text-under-big-hi {
   text-align: center;
   font-size: larger;
   margin-top: 0;
 }
-body #the-thing-for-button {
+body #landing-view #the-thing-for-button {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
 }
-body #the-thing-for-button #scroll-to-about {
+body #landing-view #the-thing-for-button #scroll-to-about {
+  position: absolute;
   bottom: 0;
-  left: 50%;
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
   border-radius: 1em 1em 0 0;
 }
-body #the-thing-for-button #scroll-to-about #scroll-down-button {
+body #landing-view #the-thing-for-button #scroll-to-about a {
+  text-decoration: none;
+  color: white;
+}
+body #landing-view #the-thing-for-button #scroll-to-about #scroll-down-button {
   font-size: xx-large;
   padding: 0.8em;
+}
+body #about-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body #about-page #about-title {
+  text-align: center;
+}
+body #projects-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body #projects-page #projects-title {
+  text-align: center;
+}
+body #contact-page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+body #contact-page #contact-title {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
