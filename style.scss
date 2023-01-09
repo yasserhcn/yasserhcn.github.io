@@ -3,6 +3,34 @@ html
     scroll-behavior: smooth;
 }
 
+#the-thing-for-button
+{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+    #scroll-to-about
+    {
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(30, 30, 30);
+        border-radius: 1em 1em 0 0;
+
+        a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        #scroll-down-button
+        {
+            font-size: xx-large;
+            padding: 0.8em;
+        }
+    }
+}
+
 body
 {
     background-color: rgb(22, 22, 22);
@@ -108,34 +136,6 @@ body
             font-size: larger;
             margin-top: 0;
         }
-
-        #the-thing-for-button
-        {
-
-            display: flex;
-            justify-content: space-around;
-            align-items: flex-end;
-
-            #scroll-to-about
-            {
-                position: absolute;
-                bottom: 0;
-                background-color: rgb(30, 30, 30);
-                border-radius: 1em 1em 0 0;
-
-                a
-                {
-                    text-decoration: none;
-                    color: white;
-                }
-
-                #scroll-down-button
-                {
-                    font-size: xx-large;
-                    padding: 0.8em;
-                }
-            }
-        }
     }
 
     #about-page
@@ -161,6 +161,39 @@ body
         #projects-title
         {
             text-align: center;
+            margin-bottom: 2em;
+        }
+
+        #projects-container
+        {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+            gap: 2em;
+            padding-left: 2em;
+            padding-right: 2em;
+
+            div
+            {
+                transition: 0.2s;
+                background-color: rgb(15, 15, 15);
+                border-radius: 1em;
+                flex: 1 0 30%;
+                text-align: center;
+                height: 12em;
+                
+                p
+                {
+                    margin-left: 2em;
+                    margin-right: 2em;
+                }
+            }
+
+            div:hover
+            {
+                background-color: rgb(25, 25, 25);
+            }
         }
     }
 
