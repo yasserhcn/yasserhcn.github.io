@@ -12,7 +12,7 @@ html {
 }
 #go-up #scroll-to-about {
   background-color: rgb(30, 30, 30);
-  border-radius: 1em 0 0 1em;
+  border-radius: 1em 0 0 0;
 }
 #go-up #scroll-to-about a {
   text-decoration: none;
@@ -103,6 +103,7 @@ body #landing-view #small-text-under-big-hi {
   margin-top: 0;
 }
 body #other-pags {
+  scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
 }
 body #other-pags div {
@@ -116,6 +117,14 @@ body #other-pags #about-page {
 }
 body #other-pags #about-page #about-title {
   text-align: center;
+}
+body #other-pags #about-page #text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body #other-pags #about-page #text div {
+  margin: 0 1em 0 1em;
 }
 body #other-pags #projects-page {
   width: 100%;

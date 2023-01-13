@@ -16,7 +16,7 @@ html
     {
         
         background-color: rgb(30, 30, 30);
-        border-radius: 1em 0 0 1em;
+        border-radius: 1em 0 0 0;
 
         a
         {
@@ -141,6 +141,7 @@ body
 
     #other-pags
     {
+        scroll-snap-type: mandatory;
         scroll-snap-type: y mandatory;
 
         div
@@ -158,6 +159,18 @@ body
             #about-title
             {
                 text-align: center;
+            }
+
+            #text
+            {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                div
+                {
+                    margin: 0 1em 0 1em;
+                }
             }
         }
 
