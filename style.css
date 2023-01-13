@@ -2,28 +2,29 @@ html {
   scroll-behavior: smooth;
 }
 
-#the-thing-for-button {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-}
-#the-thing-for-button #scroll-to-about {
-  position: absolute;
+#go-up {
+  position: sticky;
   bottom: 0;
-  background-color: #1e1e1e;
-  border-radius: 1em 1em 0 0;
+  right: 0;
+  width: 5em;
+  margin-left: auto;
+  text-align: center;
 }
-#the-thing-for-button #scroll-to-about a {
+#go-up #scroll-to-about {
+  background-color: rgb(30, 30, 30);
+  border-radius: 1em 0 0 1em;
+}
+#go-up #scroll-to-about a {
   text-decoration: none;
   color: white;
 }
-#the-thing-for-button #scroll-to-about #scroll-down-button {
+#go-up #scroll-to-about #scroll-down-button {
   font-size: xx-large;
   padding: 0.8em;
 }
 
 body {
-  background-color: #161616;
+  background-color: rgb(22, 22, 22);
   color: white;
   margin-bottom: 0;
 }
@@ -40,7 +41,7 @@ body #landing-view #top-bar {
   flex-direction: row;
   padding: 0;
   margin: 0.5em;
-  background-color: #1e1e1e;
+  background-color: rgb(30, 30, 30);
   border-radius: 3em;
 }
 body #landing-view #top-bar #left-side {
@@ -101,26 +102,33 @@ body #landing-view #small-text-under-big-hi {
   font-size: larger;
   margin-top: 0;
 }
-body #about-page {
+body #other-pags {
+  scroll-snap-type: y mandatory;
+}
+body #other-pags div {
+  scroll-snap-align: start;
+}
+body #other-pags #about-page {
   width: 100%;
   height: 100%;
   position: relative;
   padding-top: 1em;
 }
-body #about-page #about-title {
+body #other-pags #about-page #about-title {
   text-align: center;
 }
-body #projects-page {
+body #other-pags #projects-page {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   position: relative;
-  padding-top: 1em;
+  padding-top: 0em;
 }
-body #projects-page #projects-title {
+body #other-pags #projects-page #projects-title {
   text-align: center;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
-body #projects-page #projects-container {
+body #other-pags #projects-page #projects-container {
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
@@ -128,29 +136,30 @@ body #projects-page #projects-container {
   gap: 2em;
   padding-left: 2em;
   padding-right: 2em;
+  padding-bottom: 7em;
 }
-body #projects-page #projects-container div {
+body #other-pags #projects-page #projects-container div {
   transition: 0.2s;
-  background-color: #0f0f0f;
+  background-color: rgb(15, 15, 15);
   border-radius: 1em;
-  flex: 1 0 30%;
+  flex-grow: 1;
   text-align: center;
-  height: 12em;
+  width: 20em;
 }
-body #projects-page #projects-container div p {
+body #other-pags #projects-page #projects-container div p {
   margin-left: 2em;
   margin-right: 2em;
 }
-body #projects-page #projects-container div:hover {
-  background-color: #191919;
+body #other-pags #projects-page #projects-container div:hover {
+  background-color: rgb(25, 25, 25);
 }
-body #contact-page {
+body #other-pags #contact-page {
   width: 100%;
   height: 100%;
   position: relative;
   padding-top: 1em;
 }
-body #contact-page #contact-title {
+body #other-pags #contact-page #contact-title {
   text-align: center;
 }
 

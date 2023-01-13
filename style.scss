@@ -3,19 +3,20 @@ html
     scroll-behavior: smooth;
 }
 
-#the-thing-for-button
+#go-up
 {
-
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    width: 5em;
+    margin-left: auto;
+    text-align: center;
 
     #scroll-to-about
     {
-        position: absolute;
-        bottom: 0;
+        
         background-color: rgb(30, 30, 30);
-        border-radius: 1em 1em 0 0;
+        border-radius: 1em 0 0 1em;
 
         a
         {
@@ -138,75 +139,87 @@ body
         }
     }
 
-    #about-page
+    #other-pags
     {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding-top: 1em;
+        scroll-snap-type: y mandatory;
 
-        #about-title
+        div
         {
-            text-align: center;
-        }
-    }
-
-    #projects-page
-    {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding-top: 1em;
-
-        #projects-title
-        {
-            text-align: center;
-            margin-bottom: 2em;
+            scroll-snap-align: start;
         }
 
-        #projects-container
+        #about-page
         {
-            display: flex;
-            flex-wrap: wrap;
-            align-content: space-around;
-            justify-content: space-around;
-            gap: 2em;
-            padding-left: 2em;
-            padding-right: 2em;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding-top: 1em;
 
-            div
+            #about-title
             {
-                transition: 0.2s;
-                background-color: rgb(15, 15, 15);
-                border-radius: 1em;
-                flex: 1 0 30%;
                 text-align: center;
-                height: 12em;
-                
-                p
+            }
+        }
+
+        #projects-page
+        {
+            width: 100%;
+            height: auto;
+            min-height: 100%;
+            position: relative;
+            padding-top: 0em;
+
+            #projects-title
+            {
+                text-align: center;
+                margin-bottom: 1em;
+            }
+
+            #projects-container
+            {
+                display: flex;
+                flex-wrap: wrap;
+                align-content: space-around;
+                justify-content: space-around;
+                gap: 2em;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-bottom: 7em;
+
+                div
                 {
-                    margin-left: 2em;
-                    margin-right: 2em;
+                    transition: 0.2s;
+                    background-color: rgb(15, 15, 15);
+                    border-radius: 1em;
+                    flex-grow: 1;
+                    text-align: center;
+                    width: 20em;
+                    
+                    p
+                    {
+                        margin-left: 2em;
+                        margin-right: 2em;
+                    }
+                }
+
+                div:hover
+                {
+                    background-color: rgb(25, 25, 25);
                 }
             }
-
-            div:hover
-            {
-                background-color: rgb(25, 25, 25);
-            }
         }
-    }
 
-    #contact-page
-    {
-        width: 100%;
-        height: 100%;
-        position: relative;
-        padding-top: 1em;
-
-        #contact-title
+        #contact-page
         {
-            text-align: center;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            padding-top: 1em;
+
+            #contact-title
+            {
+                text-align: center;
+            }
         }
     }
 }
