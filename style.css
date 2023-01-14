@@ -120,11 +120,17 @@ body #other-pags #about-page #about-title {
 }
 body #other-pags #about-page #text {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 body #other-pags #about-page #text div {
-  margin: 0 1em 0 1em;
+  margin: 2em 1em 2em 1em;
+}
+body #other-pags #about-page #text div p {
+  width: 30em;
+  margin: auto;
 }
 body #other-pags #projects-page {
   width: 100%;
@@ -153,7 +159,7 @@ body #other-pags #projects-page #projects-container div {
   border-radius: 1em;
   flex-grow: 1;
   text-align: center;
-  width: 20em;
+  width: 30em;
 }
 body #other-pags #projects-page #projects-container div p {
   margin-left: 2em;
