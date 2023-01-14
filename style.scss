@@ -152,7 +152,6 @@ body
         #about-page
         {
             width: 100%;
-            height: 100%;
             position: relative;
             padding-top: 1em;
 
@@ -186,8 +185,6 @@ body
         #projects-page
         {
             width: 100%;
-            height: auto;
-            min-height: 100%;
             position: relative;
             padding-top: 0em;
 
@@ -234,13 +231,43 @@ body
         #contact-page
         {
             width: 100%;
-            height: 100%;
             position: relative;
             padding-top: 1em;
 
             #contact-title
             {
                 text-align: center;
+            }
+
+            p
+            {
+                text-align: center;
+            }
+
+            #links
+            {
+                text-align: center;
+                i
+                {
+                    font-size: larger;
+                }
+
+                h2:hover
+                {
+                    background-color: rgb(22, 22, 22);
+                    color: white;
+                }
+
+                h2
+                {
+                    transition: 0.4s;
+                    background-color: black;
+                    color: black;
+                    width: fit-content;
+                    text-align: center;
+                    margin: auto;
+                }
+
             }
         }
     }
