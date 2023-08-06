@@ -1,111 +1,40 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <title>yasser</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-    <div id="landing-view">
-        <!-- TOP BAR -->
-        <div id="top-bar">
-            <div id="left-side">
-                <a href="#about-page">about</a>
-                <a href="#projects-page">projects</a>
-                <a href="#contact-page">contact</a>
-            </div>
-            <div id="right-side">
-                <a href="https://github.com/yasserhcn"><i class="fa fa-github" id="icons"></i></a>
-                <a href="https://www.linkedin.com/in/yasser-hacini-a53320261/"><i class="fa fa-linkedin" id = "icons"></i></a>
-                <a href="https://yasserhcn.github.io/"><i class="fa fa-globe" id="icons"></i></a>
-            </div>
-        </div>
-
-        <!-- BIG TEXT -->
-        <div id="text">
-            <h1 id="big-hi-title">Hello</h1>
-            <p id="small-text-under-big-hi">I like to tinker with computers and make them do stuff</p>
-        </div>
+<body>
+    <div class="center-content">
+        <h1>Hacini Yasser</h1>
+        <h3>embedded systems developer</h3>
+        <h3>full stack developer</h3>
     </div>
 
-    <div id="other-pags">
-        <div id="about-page">
-            <h1 id="about-title">
-                About
-            </h1>
-
-            <div id="text">
-                <div id="#who-am-i">
-                    <h2> Who am I?</h2>
-                    <p>
-                        my name is Yasser, I'm a soon to be graduate compSci student, I like to make
-                        stuff for computers such as apps or servers, or even make them do stuff with
-                        circuits like STM32 or arduino, C++ is my strong suite but I'm good at adapting
-                    </p>
-                </div>
-
-                <div id="#what-i-do">
-                    <h2> What do I do?</h2>
-                    <p>
-                        C++ is my main language that I've been using since 2018, lately I have started
-                        using java for desktop applications and javascript for web servers<br>
-                        I sometimes tinker with SDRs and try to decode signals with them, I even
-                        wrote a simple tool for revers engineering that you can find on my github<br>
-                        science and astronomy (besides CS duh) have always been something I'm pasionate
-                        about 
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div id="projects-page">
-            <h1 id="projects-title">
-                Projects
-            </h1>
-
-            <div id="projects-container">
-                <div>
-                    <h1>minCPT</h1>
-                    <p> a minimalist C/C++ project management tool that is meant to bee an easier and faster to learn version of cmake </p>
-                </div>
-
-                <div>
-                    <h1>signal-thing</h1>
-                    <p> a software for visualizing and reverse engineering signals from SDRs, it is under development and currently has a waveform display and an fft window, it support WAV files </p>
-                </div>
-
-                <div>
-                    <h1>uni lesson site</h1>
-                    <p> a prototype open source website educational website that uses dynamically loaded pages using nodeJS  </p>
-                </div>
-
-                <div>
-                    <h1>internship management tool</h1>
-                    <p> a tool for managing university internships using java and mysql  </p>
-                </div>
-
-            </div>
-        </div>
-
-        <div id="contact-page">
-            <h1 id="contact-title">
-                Contact
-            </h1>
-
-            <div id="links">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <h2>not currently available</h2>
-            </div>
-            <p>you can contact me on my linked in account</p>
-            
-        </div>
-
-        <!-- SCROLL BUTTON -->
-        <div id="go-up">
-            <div id="scroll-to-about">
-                <a href="#landing-view"><i class="fa fa-chevron-up" id="scroll-down-button"></i></a>
-            </div>
-        </div>
+    <div class="left" id="leftButton" onclick="left()">
+        <h1><</h1>
     </div>
+
+    <div class="right">
+        <h1>></h1>
+    </div>
+
+    <div class="bottom">
+        <p>_________________________</p>
+    </div>
+
+    <script>
+        function left(){
+            console.log("pressed")
+            document.getElementById("leftButton").ani
+            document.getElementById("leftButton").style.marginLeft = "100%";
+            document.getElementsByTagName("body")[0].style.marginLeft = "100%"
+            setTimeout(()=>{
+                document.getElementById("leftButton").remove();
+            }, 1000)
+        }
+    </script>
 </body>
 </html>

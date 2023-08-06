@@ -1,198 +1,69 @@
-html {
-  scroll-behavior: smooth;
-}
-
-#go-up {
-  position: sticky;
-  bottom: 0;
-  right: 0;
-  width: 5em;
-  margin-left: auto;
-  text-align: center;
-}
-#go-up #scroll-to-about {
-  background-color: rgb(30, 30, 30);
-  border-radius: 1em 0 0 0;
-}
-#go-up #scroll-to-about a {
-  text-decoration: none;
-  color: white;
-}
-#go-up #scroll-to-about #scroll-down-button {
-  font-size: xx-large;
-  padding: 0.8em;
-}
-
 body {
-  background-color: rgb(22, 22, 22);
-  color: white;
-  margin-bottom: 0;
+  margin: 0;
+  background-color: #101010;
 }
-body #landing-view {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-body #landing-view #top-bar {
-  padding: 1em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  padding: 0;
-  margin: 0.5em;
-  background-color: rgb(30, 30, 30);
-  border-radius: 3em;
-}
-body #landing-view #top-bar #left-side {
-  display: flex;
-  margin-left: 3em;
-}
-body #landing-view #top-bar #left-side a {
-  transition: 0.2s;
-  margin: 1em;
-  text-decoration: none;
-  color: white;
-  position: relative;
-  font-size: larger;
-}
-body #landing-view #top-bar #left-side a:hover {
-  transition: 0.2s;
-  color: lightblue;
-}
-body #landing-view #top-bar #left-side a:after {
-  content: "";
+body .center-content {
+  vertical-align: middle;
+  background-color: #222;
+  color: #ccc;
+  text-align: center;
   position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
+  padding: 3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 6px 5px black;
+}
+body .left {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  background-color: #050505;
+  padding: 2em;
+  border-radius: 0 2.5em 2.5em 0;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.5s;
+}
+body .left:hover {
+  transition: 0.5s;
+  box-shadow: 0 5px #505050;
+  background-color: #0A0A0A;
+}
+body .right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  color: white;
+  background-color: #050505;
+  padding: 2em;
+  border-radius: 2.5em 0 0 2.5em;
+  text-align: center;
+  vertical-align: middle;
+}
+body .right:hover {
+  transition: 0.5s;
+  box-shadow: 0 5px #505050;
+  background-color: #0A0A0A;
+}
+body .bottom {
+  position: absolute;
+  width: 50%;
   bottom: 0;
-  left: 0;
-  background-color: lightblue;
-  transform-origin: bottom right;
-  transition: transform 0.15s ease-out;
-}
-body #landing-view #top-bar #left-side a:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-body #landing-view #top-bar #right-side {
-  display: flex;
-}
-body #landing-view #top-bar #right-side a {
-  transition: 0.2s;
-  text-decoration: none;
-  color: white;
-}
-body #landing-view #top-bar #right-side a:hover {
-  transition: 0.2s;
-  color: grey;
-}
-body #landing-view #top-bar #right-side #icons {
-  font-size: 3em;
-  margin: 0.5em;
-}
-body #landing-view #big-hi-title {
-  font-size: 8em;
-  text-align: center;
-  margin-bottom: 0;
-}
-body #landing-view #small-text-under-big-hi {
-  text-align: center;
-  font-size: larger;
-  margin-top: 0;
-}
-body #other-pags {
-  scroll-snap-type: mandatory;
-  scroll-snap-type: y mandatory;
-}
-body #other-pags div {
-  scroll-snap-align: start;
-}
-body #other-pags #about-page {
-  width: 100%;
-  position: relative;
-  padding-top: 1em;
-}
-body #other-pags #about-page #about-title {
+  right: 50%;
+  transform: translate(50%, 0);
+  background-color: #050505;
+  height: 2.5em;
+  border-radius: 1em 1em 0 0;
+  color: #050505;
   text-align: center;
 }
-body #other-pags #about-page #text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-}
-body #other-pags #about-page #text div {
-  margin: 2em 1em 2em 1em;
-}
-body #other-pags #about-page #text div p {
-  width: 30em;
-  margin: auto;
-}
-body #other-pags #projects-page {
-  width: 100%;
-  position: relative;
-  padding-top: 0em;
-}
-body #other-pags #projects-page #projects-title {
-  text-align: center;
-  margin-bottom: 1em;
-}
-body #other-pags #projects-page #projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
-  gap: 2em;
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 7em;
-}
-body #other-pags #projects-page #projects-container div {
-  transition: 0.2s;
-  background-color: rgb(15, 15, 15);
-  border-radius: 1em;
-  flex-grow: 1;
-  text-align: center;
-  width: 30em;
-}
-body #other-pags #projects-page #projects-container div p {
-  margin-left: 2em;
-  margin-right: 2em;
-}
-body #other-pags #projects-page #projects-container div:hover {
-  background-color: rgb(25, 25, 25);
-}
-body #other-pags #contact-page {
-  width: 100%;
-  position: relative;
-  padding-top: 1em;
-}
-body #other-pags #contact-page #contact-title {
-  text-align: center;
-}
-body #other-pags #contact-page p {
-  text-align: center;
-}
-body #other-pags #contact-page #links {
-  text-align: center;
-}
-body #other-pags #contact-page #links i {
-  font-size: larger;
-}
-body #other-pags #contact-page #links h2:hover {
-  background-color: rgb(22, 22, 22);
-  color: white;
-}
-body #other-pags #contact-page #links h2 {
-  transition: 0.4s;
-  background-color: black;
-  color: black;
-  width: fit-content;
-  text-align: center;
-  margin: auto;
+body .bottom:hover {
+  transition: 0.5s;
+  box-shadow: 0 -5px #505050;
+  background-color: #0A0A0A;
 }
 
 /*# sourceMappingURL=style.css.map */
