@@ -1,0 +1,38 @@
+body
+{
+    .top
+    {
+        .top-container
+        {
+            display: flex;
+            justify-content: space-around;
+            
+            .top-button
+            {
+
+            }
+        }
+    }
+
+    .main
+    {
+        .background
+        {
+
+        }
+
+        .foreground
+        {
+            .centered
+            {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 50%;
+                height: 50%;
+                transform: translate(-50%, -20%);
+                text-align: center;
+            }
+        }
+    }
+}
