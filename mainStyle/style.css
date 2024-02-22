@@ -1,6 +1,52 @@
+body {
+  font-family: "IBM Plex Mono";
+  margin: 0;
+  color: white;
+  background-color: black;
+}
 body .top .top-container {
   display: flex;
   justify-content: space-around;
+}
+body .top .top-container .top-button {
+  width: 100%;
+  height: 100%;
+  border: 1px black solid;
+  text-align: center;
+}
+body .main .background {
+  display: flex;
+  justify-content: space-around;
+}
+body .main .background .left-terminal {
+  left: 0;
+  width: 50%;
+  border: 1px lime solid;
+  padding-left: 1em;
+}
+body .main .background .right-terminal {
+  border: 1px white solid;
+  border-left: 0;
+  padding-left: 1em;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main .background .right-terminal .top-terminal {
+  height: 50%;
+  border-bottom: 1px white solid;
+}
+body .main .background .right-terminal .bottom-terminal {
+  height: 50%;
+}
+body .main .background p {
+  font-size: small;
+}
+body .main .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
 body .main .foreground .centered {
   position: absolute;
@@ -8,8 +54,19 @@ body .main .foreground .centered {
   bottom: 0;
   width: 50%;
   height: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -30%);
   text-align: center;
+}
+body .main .foreground .centered h3 {
+  margin: 0;
+}
+body .main .foreground .centered h1 {
+  margin: 0.2em;
+  font-size: 500%;
+}
+
+.green-text {
+  color: lime;
 }
 
 /*# sourceMappingURL=style.css.map */
