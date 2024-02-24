@@ -81,7 +81,8 @@ body {
         margin-right: auto;
         margin-bottom: 0.5em;
         width: fit-content;
-        background-color: grey; }
+        background-color: grey;
+        padding: 0em 0.2em 0em 0.2em; }
 
 .green-text {
   color: lime; }
