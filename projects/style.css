@@ -7,3 +7,24 @@
 {
     background-color: #202020;
 }
+
+.blocks
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.blocks div
+{
+    background-color: grey;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em;
+    height: 18em;
+    width: 18em;
+}
+
+.blocks div a {
+    text-decoration: none;
+}
