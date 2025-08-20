@@ -13,6 +13,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
+    color: black;
 }
 
 .blocks div
@@ -25,6 +27,12 @@
     width: 18em;
 }
 
+.blocks h2
+{
+    font-size: xx-large;
+}
+
 .blocks div a {
     text-decoration: none;
+    color: black;
 }
