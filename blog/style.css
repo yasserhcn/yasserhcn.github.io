@@ -7,3 +7,51 @@
 {
     background-color: #202020;
 }
+
+.blogs-container
+{
+    width: 70%;
+    height: 96%;
+    margin-left: 15%;
+    background-color: #343434;
+    min-width: 20%;
+    padding: 1em;
+    border: 0;
+    border-left: 1px;
+    border-right: 1px;
+    border-style: solid;
+    border-color: lime;
+    color: black;
+}
+
+.blogs-container a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.blogs-container .blog
+{
+    transition: 0.2s;
+    background-color: #C0C0C0;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.blogs-container .blog:hover
+{
+    transition: 0.2s;
+    background-color: #A0A0A0;
+}
+
+.blogs-container .blog h1
+{
+    margin-left: 1rem;
+    font-size: xx-large;
+}
+
+.blogs-container .blog p
+{
+    margin-left: 1rem;
+}
