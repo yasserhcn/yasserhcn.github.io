@@ -19,12 +19,19 @@
 
 .blocks div
 {
-    background-color: grey;
+    transition: 0.2s;
+    background-color: #909090;
     padding: 1em;
     border-radius: 1em;
     margin: 0.5em;
     height: 18em;
     width: 18em;
+}
+
+.blocks div:hover
+{
+    transition: 0.2s;
+    background-color: #808080;
 }
 
 .blocks h2
