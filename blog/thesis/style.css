@@ -48,3 +48,23 @@
     color: white;
     padding: 2rem;
 }
+
+.side-titles
+{
+    padding: 1em;
+    position: sticky;
+    top: 25%;
+    height: fit-content;
+}
+
+.side-titles a
+{
+    text-decoration: none;
+    color: lime;
+    margin-top: 1em;
+}
+
+.side-titles a:hover
+{
+    color: palegreen;
+}
